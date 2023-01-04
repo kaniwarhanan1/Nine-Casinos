@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <img id="logo" src="../images/logo.png" alt="logo">
+                <li><a href="games.html">Games</a></li>
+                <li><a href="Contact-us.html">Contact Us</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+            </ul>
+        </div>
+        <div id="logo">
+            
+        </div>
+        <form action="/login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button id="login-button"><a href="games.html">login</a></button>
+          </form> 
+          <div id="button" style="visibility: visible">
+          <button id="submit" onclick="document.getElementById('registration-form').style.visibility = 'visible'">Register</button>
+            </div>
+          <form id="registration-form" style="visibility:hidden">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="surname">Surname:</label><br>
+            <input type="text" id="surname" name="surname"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Register">
+          </form> 
+          <script src="../js/script.js"></script>
+
+         <div class="footer">
+            <h1>
+                © 2023  Nine Casinos | All Rights Reserved.
+            </h1>
+        </div>
+    </body>
+</html>
