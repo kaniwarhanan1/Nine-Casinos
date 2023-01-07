@@ -33,8 +33,8 @@ var email = $('#email').val();
 
 var faq = document.getElementsByClassName("faq-page");
 var i;
-for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
+for (i = 0; i <faq.length; i++) {
+    faq[i].addEventListener( "click" , function () {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
         this.classList.toggle("active");
@@ -48,6 +48,18 @@ for (i = 0; i < faq.length; i++) {
     });
 }
 
-document.getElementById("login-button").addEventListener("click", function() {
+//document.getElementById("login-button").addEventListener("click", function() {
+ // alert("You are logged in");
+  //});
+ 
+const button = document.getElementById("my-button");
+const nav = document.getElementById("mynav");
+
+button.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
+
+function myFunction() {
   alert("You are logged in");
-  });
+  window.location.href = "games.html";
+}
