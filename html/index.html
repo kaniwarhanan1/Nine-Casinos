@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>NineCasinos</title>
     </head>
     <body>
-        <header>
-        <div class="nav">
-            <ul>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="Contact-us.html">Contact Us</a></li>
-                <li><a href="About-us.html">About Us</a></li>
-                <li><a class="active" href="#home">Home</a></li>
+        <header class="header">
+            <a href="./index.html" class="logo">NineCasinos</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/About-us.html">About Us</a></li>
+                <li><a href="../html/Contact-us.html">Contact Us</a></li>
+                <li><a href="../html/games.html">games</a></li>
+                
             </ul>
-        </div>
-    </header>
+        </header>
+        <br>
+        <br>
+        <br>
+        <section id="formsection">
         <form action="/login" method="post">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
@@ -40,12 +47,14 @@
             <input type="email" id="email" name="email"><br>
             <input type="submit" value="Register">
           </form> 
-          <script src="../js/script.js"></script>
-
+        </section>
+        <script src="../js/script.js"></script>
          <div class="footer">
-            <h1>
-                © 2023  Nine Casinos | All Rights Reserved.
-            </h1>
+            <a id="icons" href="https://www.mcast.edu.mt/" class="fa fa-facebook"></a>
+            <a id="icons" href="https://www.mcast.edu.mt/" class="fa fa-twitter"></a>
+            <a id="icons" href="https://www.mcast.edu.mt/" class="fa fa-google"></a>
+            <a id="icons" href="https://www.mcast.edu.mt/" class="fa fa-instagram"></a>
+           <h2>© 2023  Nine Casinos | All Rights Reserved.</h2> 
         </div>
     </body>
 </html>
